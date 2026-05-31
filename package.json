@@ -1,0 +1,16 @@
+{
+  "name": "prism-test-app",
+  "version": "1.0.0",
+  "description": "Test app for Prism LLM observability SDK",
+  "type": "module",
+  "scripts": {
+    "test":              "node --env-file=.env test.mjs",
+    "test:branches":     "node --env-file=.env simulate-branches.mjs",
+    "demo":              "node --env-file=.env demo.mjs",
+    "demo:stream":       "node --env-file=.env demo-stream.mjs"
+  },
+  "dependencies": {
+    "@prism-llm-labs/sdk": "^0.1.1",
+    "openai": "^4.0.0"
+  }
+}
